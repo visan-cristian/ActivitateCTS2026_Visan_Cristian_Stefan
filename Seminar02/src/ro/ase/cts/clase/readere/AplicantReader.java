@@ -7,7 +7,12 @@ import java.util.List;
 import java.util.Scanner;
 
 public abstract class AplicantReader {
-    public abstract List<Aplicant> readAplicanti(String file) throws FileNotFoundException;
+    protected String numeFisier;
+    public AplicantReader(String numeFisier) {
+        this.numeFisier = numeFisier;
+    }
+
+    public abstract List<Aplicant> readAplicanti() throws FileNotFoundException;
 
     protected void readAplicant(Scanner input, Aplicant outAplicant){
         String nume = input.next();
