@@ -1,11 +1,11 @@
 package ro.ase.cts.clase;
 
 public class Salon {
-    public boolean patLiber[]=new boolean[4];
+    private boolean patLiber[]=new boolean[4];
 
     public Salon() {
-        this.patLiber[0] =  true;
         this.patLiber[1] =  true;
+        this.patLiber[3] =  true;
     }
 
     public int getPatLiber(){

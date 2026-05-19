@@ -21,6 +21,6 @@ public class Main {
 
         notaDePlataDecorator.printeaza();
 
-        NotaDePlataDecorator.printeazaFelicitare();
+        notaDePlataDecorator.printeazaFelicitare();
     }
 }

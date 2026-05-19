@@ -8,25 +8,24 @@ import ro.ase.cts.clase.Salon;
 public class Main {
     static void main(String[] args){
         Pacient pacient = new Pacient("Gigel", 5);
-        Medic medic1 = new Medic();
-        Salon salon1 = new Salon();
+        Medic medic = new Medic();
+        Salon salon = new Salon();
 
-        if (medic1.areTrimitere(pacient)){
-            int patLiber = salon1.getPatLiber();
+        if (medic.areTrimitere(pacient)){
+            int patLiber = salon.getPatLiber();
             if (patLiber != -1){
                 System.out.println("Pacientul " + pacient.getNume() + " va fi internat in patul " + patLiber);
-                salon1.ocupaPat(patLiber);
+                salon.ocupaPat(patLiber);
             }
         }
+
+        Pacient pacient1 = new Pacient("Mihai", 5);
+        Pacient pacient2 = new Pacient("George", 2);
+        Pacient pacient3 = new Pacient("George", 2);
+
+        ReceptieSpital receptieSpital1 = new ReceptieSpital(medic, salon);
+        receptieSpital1.interneazaPacient(pacient1);
+        receptieSpital1.interneazaPacient(pacient2);
+        receptieSpital1.interneazaPacient(pacient3);
     }
-
-    Pacient pacient1 = new Pacient("Mihai", 5);
-    Pacient pacient2 = new Pacient("George", 2);
-    Pacient pacient3 = new Pacient("George", 2);
-
-    ReceptieSpital receptieSpital1 = new ReceptieSpital(medic1.salon1);
-    receptieSpital1.interneazaPacient(pacient1);
-    receptieSpital1.interneazaPacient(pacient2);
-    receptieSpital1.interneazaPacient(pacient3);
-
 }
