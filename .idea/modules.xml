@@ -16,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/Seminar10_Flyweight/Seminar10_Flyweight.iml" filepath="$PROJECT_DIR$/Seminar10_Flyweight/Seminar10_Flyweight.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seminar11_Chain/Seminar11_Chain.iml" filepath="$PROJECT_DIR$/Seminar11_Chain/Seminar11_Chain.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seminar11_Command/Seminar11_Command.iml" filepath="$PROJECT_DIR$/Seminar11_Command/Seminar11_Command.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminar11_Observer/Seminar11_Observer.iml" filepath="$PROJECT_DIR$/Seminar11_Observer/Seminar11_Observer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seminar11_Strategy/Seminar11_Strategy.iml" filepath="$PROJECT_DIR$/Seminar11_Strategy/Seminar11_Strategy.iml" />
     </modules>
   </component>
